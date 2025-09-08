@@ -1,5 +1,6 @@
 class LanguageManager {
-    constructor() {
+    constructor(supportedLanguages = ['en', 'es']) {
+        this.supportedLanguages = supportedLanguages;
         this.currentLanguage = this.detectLanguage();
         this.translations = {};
         this.init();
@@ -9,20 +10,20 @@ class LanguageManager {
         // Method 1: Check URL hash for language (e.g., #lang=es)
         const hash = window.location.hash;
         const hashMatch = hash.match(/[#&]lang=([a-z]{2})/);
-        if (hashMatch && ['en', 'es'].includes(hashMatch[1])) {
+        if (hashMatch && this.supportedLanguages.includes(hashMatch[1])) {
             return hashMatch[1];
         }
 
         // Method 2: Check URL search params (e.g., ?lang=es)
         const urlParams = new URLSearchParams(window.location.search);
         const langParam = urlParams.get('lang');
-        if (langParam && ['en', 'es'].includes(langParam)) {
+        if (langParam && this.supportedLanguages.includes(langParam)) {
             return langParam;
         }
 
         // Method 3: Check localStorage for saved preference
         const savedLang = localStorage.getItem('preferred-language');
-        if (savedLang && ['en', 'es'].includes(savedLang)) {
+        if (savedLang && this.supportedLanguages.includes(savedLang)) {
             return savedLang;
         }
 
@@ -32,14 +33,14 @@ class LanguageManager {
         
         if (pathSegments.length > 0) {
             const langCode = pathSegments[0];
-            if (['en', 'es'].includes(langCode)) {
+            if (this.supportedLanguages.includes(langCode)) {
                 return langCode;
             }
         }
         
         // Method 5: Fallback to browser language
         const browserLang = navigator.language.split('-')[0];
-        return ['en', 'es'].includes(browserLang) ? browserLang : 'en';
+        return this.supportedLanguages.includes(browserLang) ? browserLang : 'es';
     }
 
     async init() {
