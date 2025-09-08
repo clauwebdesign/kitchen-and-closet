@@ -10241,6 +10241,13 @@ ul.style-default li:last-child, ol.style-default li:last-child {
 .footer-list-item:last-child {
     padding-bottom: 0;
 }
+.footer-list-item .address-1, .address-2 {
+  display: inline-block;
+}
+.footer-list-item .address-2 {
+  margin: 5px 0px;
+  padding-left: 35px;
+}
 .footer-widget-subcribe h6{
     margin-bottom: 28px;
 }
