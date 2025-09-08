@@ -1,0 +1,76 @@
+{
+    "header": {
+        "home": "Inicio",
+        "about": "Acerca de Nosotros",
+        "process": "Proceso",
+        "services": "Servicios",
+        "portfolio": "Portafolio",
+        "testimonial": "Testimonios",
+        "contact": "Contacto"
+    },
+    "footer": {
+        "description": "Nos especializamos en construcción personalizada de cocinas y closets, carpintería y soluciones de gabinetes para su hogar.",
+        "contact": "Contacto",
+        "social_media": "Redes Sociales",
+        "address": "Dirección",
+        "copyright": "Copyright © 2025"
+    },
+    "main": {
+        "banner": {
+            "title": "Cocinas, Closets e Interiores a la Medida",
+            "subtitle": "Transformamos tu hogar con diseño innovador, artesanía impecable y carpintería hecha para perdurar."
+        },
+        "button": {
+            "title": "Obtener Cotización",
+            "learn_more": "Saber Más",
+            "contact_us": "Contáctanos",
+            "view_projects": "Ver Proyectos"
+        },
+        "about": {
+            "company": "Acerca de la empresa",
+            "title": "Constructores Expertos de Cocinas y Closets",
+            "description": "Nuestra filosofía es crear soluciones individuales, estéticamente impresionantes de cocinas y closets para nuestros clientes a través de artesanía experta y carpintería personalizada. Incluso si no tiene un boceto listo de lo que desea, le ayudaremos a diseñar y construir las soluciones de almacenamiento perfectas que soñó."
+        },
+        "process": {
+            "section_title": "pasos de trabajo",
+            "title": "Nuestro Proceso de Construcción",
+            "step1": "Consulta de Diseño",
+            "step2": "Selección de Materiales",
+            "step3": "Construcción Personalizada",
+            "step4": "Instalación y Acabado",
+            "description": "Nuestros proyectos personalizados de cocinas y closets se construyen con precisión y atención al detalle. Utilizamos solo los mejores materiales y empleamos técnicas de carpintería tradicional combinadas con principios de diseño moderno para crear soluciones de almacenamiento que son tanto hermosas como altamente funcionales."
+        },
+        "services": {
+            "title": "Nuestros Servicios",
+            "design_planning": "Diseño y Planificación",
+            "custom_solutions": "Soluciones Personalizadas",
+            "furniture_woodwork": "Muebles y Carpintería",
+            "kitchen_cabinets": "Gabinetes de Cocina",
+            "closet_systems": "Sistemas de Closets",
+            "custom_woodwork": "Carpintería Personalizada",
+            "renovation": "Renovación"
+        },
+        "portfolio": {
+            "section_title": "[ nuestro portafolio ]",
+            "title": "Nuestros Proyectos de Cocinas y Closets",
+            "filter_all": "Todos",
+            "filter_kitchens": "Cocinas",
+            "filter_closets": "Closets",
+            "filter_cabinets": "Gabinetes",
+            "filter_woodwork": "Carpintería",
+            "project1": "Renovación de Cocina Moderna",
+            "project2": "Sistema de Closet Walk-in",
+            "project3": "Isla de Cocina Personalizada",
+            "project4": "Soluciones de Almacenamiento Empotradas",
+            "project5": "Closet Principal de Lujo",
+            "project6": "Diseño de Cocina Contemporánea",
+            "project7": "Organización de Despensa Personalizada",
+            "project8": "Oficina Ejecutiva en Casa"
+        },
+        "contact": {
+            "title": "La Casa de Tus Sueños",
+            "subtitle": "Un proyecto de diseño original y de alta calidad aumenta el valor de tu propiedad — así lo confirman muchos de nuestros clientes.",
+            "button_cta": "Póngase en Contacto"
+        }
+    }
+}

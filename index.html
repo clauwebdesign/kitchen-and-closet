@@ -43,13 +43,19 @@
                                 <div class="octf-col menu-col justify-content-end">
                                     <nav id="site-navigation" class="main-navigation">
                                         <ul class="menu">
-                                            <li><a class="scroll-target" href="#hero-section">Home</a></li>
-                                            <li><a class="scroll-target" href="#about">About Us</a></li>
-                                            <li><a class="scroll-target" href="#process">Process</a></li>
-                                            <li><a class="scroll-target" href="#services">Services</a></li>
-                                            <li><a class="scroll-target" href="#portfolio">Portfolio</a></li>
+                                            <li><a class="scroll-target" href="#hero-section" data-translate-inline>{{header.home}}</a></li>
+                                            <li><a class="scroll-target" href="#about" data-translate-inline>{{header.about}}</a></li>
+                                            <li><a class="scroll-target" href="#process" data-translate-inline>{{header.process}}</a></li>
+                                            <li><a class="scroll-target" href="#services" data-translate-inline>{{header.services}}</a></li>
+                                            <li><a class="scroll-target" href="#portfolio" data-translate-inline>{{header.portfolio}}</a></li>
                                             <!-- <li><a class="scroll-target" href="#testi">Testimonial</a></li> -->
-                                            <li><a class="scroll-target" href="#contact">Contact</a></li>
+                                            <li><a class="scroll-target" href="#contact" data-translate-inline>{{header.contact}}</a></li>
+                                            <li class="language-selector">
+                                                <select id="language-select" onchange="switchLanguage(this.value)" style="background: transparent; border: 1px solid #fff; color: #fff; padding: 5px 10px; border-radius: 4px; margin-left: 15px;">
+                                                    <option value="en">EN</option>
+                                                    <option value="es">ES</option>
+                                                </select>
+                                            </li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -88,6 +94,13 @@
                                                 <li><a class="scroll-target" href="#portfolio">Portfolio</a></li>
                                                 <li><a class="scroll-target" href="#testi">Testimonial</a></li>
                                                 <li><a class="scroll-target" href="#contact">Contact</a></li>
+                                                <li class="mobile-language-selector" style="padding: 10px 0; border-top: 1px solid #333;">
+                                                    <label style="color: #fff; margin-right: 10px;">Language:</label>
+                                                    <select id="mobile-language-select" onchange="switchLanguage(this.value)" style="background: transparent; border: 1px solid #fff; color: #fff; padding: 5px 10px; border-radius: 4px;">
+                                                        <option value="en">English</option>
+                                                        <option value="es">Español</option>
+                                                    </select>
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
@@ -193,9 +206,10 @@
             <div id="hero-section" data-number="2" data-image-1="images/placeholders/editados/IMG_0027.jpg" data-image-2="images/placeholderseditados/IMG_0027.jpg" data-effect="swirlLeft">
                 <div class="overlay-dark"></div>
                 <div class="hero-content text-center">
-                    <h2>Loft Interior Design<br> for All House</h2>
+                    <h2 data-translate-inline>{{main.banner.title}}</h2>
+                    <h4 class="subtitle" data-translate-inline>{{main.banner.subtitle}}</h4>
                     <div class="ot-button">
-                        <a href="https://wa.me/+17868357471" target="_blank" class="octf-btn octf-btn-light">Lets Start</a>
+                        <a href="https://wa.me/+17868357471" target="_blank" class="octf-btn octf-btn-light" id="hero-button" data-translate-inline>{{main.button.title}}</a>
                     </div>
                 </div><!-- /.hero-content -->
             </div>
@@ -212,12 +226,12 @@
                         <div class="col-lg-6 col-md-12 align-self-center">
                             <div class="about-detail">
                                 <div class="ot-heading is-dots">
-                                    <span>[ about company ]</span>
-                                    <h2 class="main-heading">Best Interior Solutions</h2>
+                                    <span data-translate-inline>{{main.about.company}}</span>
+                                    <h2 class="main-heading" data-translate-inline>{{main.about.title}}</h2>
                                 </div>
-                                <p>The basic philosophy of our studio is to create individual, aesthetically stunning solutions for our customers by lightning-fast development of projects employing unique styles and architecture. Even if you don’t have a ready sketch of what you want – we will help you to get the result you dreamed of.</p>
+                                <p data-translate-inline>{{main.about.description}}</p>
                                 <div class="ot-button">
-                                    <a class="scroll-target octf-btn octf-btn-dark border-hover-dark" href="#portfolio">View Projects</a>
+                                    <a class="scroll-target octf-btn octf-btn-dark border-hover-dark" href="#portfolio" data-translate-inline>{{main.button.view_projects}}</a>
                                 </div>
                             </div>
                         </div>
@@ -231,8 +245,8 @@
                     <div class="row">
                         <div class="col-lg-12 col-md-12 text-center theratio-align-center">
                             <div class="ot-heading is-dots">
-                                <span>[ working steps ]</span>
-                                <h2 class="main-heading">Our Working Process</h2>
+                                <span data-translate-inline>{{main.process.section_title}}</span>
+                                <h2 class="main-heading" data-translate-inline>{{main.process.title}}</h2>
                             </div>
                         </div>
                     </div>
@@ -245,35 +259,35 @@
                                             <span class="dcell"><i class="ot-flaticon-tip"></i></span>
                                             <span class="number-stroke">01</span>
                                         </div>
-                                        <h5>Creating a Concept</h5>
+                                        <h5 data-translate-inline>{{main.process.step1}}</h5>
                                     </li>
                                     <li>
                                         <div class="icon-main">
                                             <span class="dcell"><i class="ot-flaticon-money-back"></i></span>
                                             <span class="number-stroke">02</span>
                                         </div>
-                                        <h5>Budget Planning</h5>
+                                        <h5 data-translate-inline>{{main.process.step2}}</h5>
                                     </li>
                                     <li>
                                         <div class="icon-main">
                                             <span class="dcell"><i class="ot-flaticon-3d-1"></i></span>
                                             <span class="number-stroke">03</span>
                                         </div>
-                                        <h5>Design Process</h5>
+                                        <h5 data-translate-inline>{{main.process.step3}}</h5>
                                     </li>
                                     <li>
                                         <div class="icon-main">
                                             <span class="dcell"><i class="ot-flaticon-paint-1"></i></span>
                                             <span class="number-stroke">04</span>
                                         </div>
-                                        <h5>Building Your Dream</h5>
+                                        <h5 data-translate-inline>{{main.process.step4}}</h5>
                                     </li>
                                 </ul>
                                 <div class="process-des">
-                                    <div class="process-des-item">Original design project of high quality raises profit – this is proved in practice by many of our customers. A professional approach will avoid of many common mistakes, minimize the cost of decoration materials and choose the best way to implement your ideas or direct your</div>
-                                    <div class="process-des-item">Original design project of high quality raises profit – this is proved in practice by many of our customers. A professional approach will avoid of many common mistakes, minimize the cost of decoration materials and choose the best way to implement your ideas or direct your</div>
-                                    <div class="process-des-item">Original design project of high quality raises profit – this is proved in practice by many of our customers. A professional approach will avoid of many common mistakes, minimize the cost of decoration materials and choose the best way to implement your ideas or direct your</div>
-                                    <div class="process-des-item">Original design project of high quality raises profit – this is proved in practice by many of our customers. A professional approach will avoid of many common mistakes, minimize the cost of decoration materials and choose the best way to implement your ideas or direct your</div>
+                                    <div class="process-des-item" data-translate-inline>{{main.process.description}}</div>
+                                    <div class="process-des-item" data-translate-inline>{{main.process.description}}</div>
+                                    <div class="process-des-item" data-translate-inline>{{main.process.description}}</div>
+                                    <div class="process-des-item" data-translate-inline>{{main.process.description}}</div>
                                 </div>
                             </div>
                         </div>
@@ -293,7 +307,7 @@
                                             <img src="images/placeholders/cate1.jpg" alt="">
                                         </a>                
                                         <div class="cate-item_content">
-                                            <a href="#"><h2>Design and Planning<span class="number-stroke">01</span></h2></a>
+                                            <a href="#"><h2 data-translate-inline>{{main.services.design_planning}}<span class="number-stroke">01</span></h2></a>
                                         </div>
                                     </div>
                                 </div>
@@ -305,7 +319,7 @@
                                             <img src="images/placeholders/cate2.jpg" alt="">
                                         </a>                
                                         <div class="cate-item_content">
-                                            <a href="#"><h2>Custom Solutions<span class="number-stroke">02</span></h2></a>
+                                            <a href="#"><h2 data-translate-inline>{{main.services.custom_solutions}}<span class="number-stroke">02</span></h2></a>
                                         </div>
                                     </div>
                                 </div>
@@ -317,7 +331,7 @@
                                             <img src="images/placeholders/cate3.jpg" alt="">
                                         </a>                
                                         <div class="cate-item_content">
-                                            <a href="#"><h2>Fourniture and more<span class="number-stroke">03</span></h2></a>
+                                            <a href="#"><h2 data-translate-inline>{{main.services.furniture_woodwork}}<span class="number-stroke">03</span></h2></a>
                                         </div>
                                     </div>
                                 </div>
@@ -516,8 +530,8 @@
                     <div class="row">
                         <div class="col-lg-12 text-center theratio-align-center">
                             <div class="ot-heading is-dots s-light">
-                                <span>[ our portfolio ]</span>
-                                <h2 class="main-heading">Introduce Our Projects</h2>
+                                <span data-translate-inline>{{main.portfolio.section_title}}</span>
+                                <h2 class="main-heading" data-translate-inline>{{main.portfolio.title}}</h2>
                             </div>
                             <div class="space-40"></div>
                         </div>
@@ -526,11 +540,11 @@
                 <div class="container container-large">
                     <div class="project-filter-wrapper">
                         <ul class="project_filters s-light">
-                            <li><a href="#" data-filter="*" class="selected btn-details">All<span class="filter-count"></span></a></li>
-                            <li><a class="btn-details" href="#" data-filter=".category-14">Architecture<span class="filter-count"></span></a></li>         
-                            <li><a class="btn-details" href="#" data-filter=".category-15">Decor<span class="filter-count"></span></a></li>
-                            <li><a class="btn-details" href="#" data-filter=".category-20">Furniture<span class="filter-count"></span></a></li>
-                            <li><a class="btn-details" href="#" data-filter=".category-19">Interior<span class="filter-count"></span></a></li>
+                            <li><a href="#" data-filter="*" class="selected btn-details" data-translate-inline>{{main.portfolio.filter_all}}<span class="filter-count"></span></a></li>
+                            <li><a class="btn-details" href="#" data-filter=".category-14" data-translate-inline>{{main.portfolio.filter_kitchens}}<span class="filter-count"></span></a></li>         
+                            <li><a class="btn-details" href="#" data-filter=".category-15" data-translate-inline>{{main.portfolio.filter_closets}}<span class="filter-count"></span></a></li>
+                            <li><a class="btn-details" href="#" data-filter=".category-20" data-translate-inline>{{main.portfolio.filter_cabinets}}<span class="filter-count"></span></a></li>
+                            <li><a class="btn-details" href="#" data-filter=".category-19" data-translate-inline>{{main.portfolio.filter_woodwork}}<span class="filter-count"></span></a></li>
                         </ul>
                         <div class="projects-grid pf_4_cols style-1 img-scale w-auto">
                             <div class="grid-sizer"></div>
@@ -712,10 +726,10 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 text-center">
-                            <h2>Your Dream House</h2>
-                            <p>Original design project of high quality raises profit – this is proved in practice by many of our customers.</p>
+                            <h2 data-translate-inline>{{main.contact.title}}</h2>
+                            <p data-translate-inline>{{main.contact.subtitle}}</p>
                             <div class="ot-button">
-                                <a href="contact.html" class="octf-btn octf-btn-light border-hover-light">get in touch</a>
+                                <a href="https://wa.me/+17868357471" target="_blank" class="octf-btn octf-btn-light border-hover-light" data-translate-inline>{{main.contact.button_cta}}</a>
                             </div>
                         </div>
                     </div>
@@ -736,36 +750,32 @@
                 <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-4 mb-xl-0">
                     <div class="widget-footer">
                         <img src="images/logo-footer.svg" class="footer-logo" alt="">
-                        <p>We provides a full range of interior design, architectural design.</p>
+                        <p data-translate-inline>{{footer.description}}</p>
                     </div>
                 </div>
                 
-                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-4 mb-md-0">
+                <div class="col-xl-4 col-lg-7 col-md-7 col-sm-12 mb-4 mb-md-0">
                     <div class="widget-footer widget-contact">
-                        <h6>Contact</h6>
+                        <h6 data-translate-inline>{{footer.contact}}</h6>
                         <ul>
-                            <!-- <li><a href="#">Stylish Family Appartment</a></li>
-                            <li><a href="#">Modern Villa in Belgium</a></li>
-                            <li><a href="#">Private House in Spain</a></li> -->
                             <li class="footer-list-item">
                                 <span class="list-item-icon"><i class="ot-flaticon-mail"></i></span>
-                                <span class="list-item-text">kitchenandcloset@mail.com</span>
+                                <a href="mailto:contactus@thekitchenandcloset.com" class="list-item-text">contactus@thekitchenandcloset.com </a>
+                                
                             </li>
                             <li class="footer-list-item">
                                 <span class="list-item-icon"><i class="ot-flaticon-phone-call"></i></span>
-                                <span class="list-item-text">+1 (786) 835-7471</span>
+                                <span class="list-item-text" >+1 (786) 835-7471</span>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                <div class="col-xl-2 col-lg-5 col-md-5 col-sm-12">
                     <div class="widget-footer footer-widget-subcribe">
-                        <h6>Social Media</h6>
+                        <h6 data-translate-inline>{{footer.social_media}}</h6>
                         <div class="footer-social list-social">
                             <ul>
                                 <li><a href="http://facebook.com" target="_self"><i class="fab fa-facebook-f"></i></a></li>
-                                <!-- <li><a href="http://twitter.com" target="_self"><i class="fab fa-twitter"></i></a></li> -->
-                                <!-- <li><a href="http://linkedin.com" target="_self"><i class="fab fa-linkedin-in"></i></a></li> -->
                                 <li><a href="http://instagram" target="_self"><i class="fab fa-instagram"></i></a></li>
                             </ul>
                         </div>
@@ -773,11 +783,11 @@
                 </div>
                 <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-4 mb-xl-0">
                     <div class="widget-footer">
-                        <h6>Adress</h6>
+                        <h6 data-translate-inline>{{footer.address}}</h6>
                         <ul class="footer-list">
                             <li class="footer-list-item">
                                 <span class="list-item-icon"><i class="ot-flaticon-place"></i></span>
-                                <span class="list-item-text">Adress, Miami</span>
+                                <span class="list-item-text">Miami, FL</span>
                             </li>
                         </ul>
                     </div>
@@ -789,7 +799,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-7 col-md-12 mb-4 mb-lg-0">
-                    <p>Copyright © 2024</p>
+                    <p data-translate-inline>{{footer.copyright}}</p>
                 </div>
                 <div class="col-lg-5 col-md-12 align-self-center">
                     <ul class="icon-list-items inline-items justify-content-lg-end">
@@ -818,6 +828,47 @@
     <script src="js/vegas.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/royal_preloader.min.js"></script>
+    <script src="js/language.js"></script>
+    
+    <!-- CUSTOM TEXT USAGE EXAMPLES -->
+    <!-- 
+    EMBEDDED TRANSLATION METHODS (No template renderer needed!):
+    
+    METHOD 1: Data Attributes (Recommended)
+    <h1 data-translate="main.banner.title">Loading...</h1>
+    <p data-translate="main.banner.subtitle" data-translate-fallback="Default text">Loading...</p>
+    <div data-translate="main.about.description" data-translate-html>Loading...</div>
+    
+    METHOD 2: Template with Variables
+    <p data-translate-template="Welcome {{name}}! You have {{count}} messages." 
+       data-var-name="John" 
+       data-var-count="5">Loading...</p>
+    
+    METHOD 3: Inline Markers
+    <div data-translate-inline>
+        <p>Our service: <strong>{{main.services.interior_design}}</strong></p>
+        <p>Contact us: <em>{{main.button.contact_us}}</em></p>
+    </div>
+    
+    METHOD 4: JavaScript API
+    window.languageManager.text('main.banner.title')
+    window.languageManager.textWithVars('main.welcome', {name: 'John'})
+    window.languageManager.translateElement('#myElement', 'main.banner.title')
+    
+    METHOD 5: Batch Translation
+    window.languageManager.translateElements([
+        {selector: '#title', key: 'main.banner.title'},
+        {selector: '#subtitle', key: 'main.banner.subtitle', useHTML: true}
+    ]);
+    
+    Available keys in JSON files:
+    - main.banner.title, main.banner.subtitle
+    - main.button.title, main.button.learn_more, main.button.contact_us
+    - main.about.title, main.about.description
+    - main.services.title, main.services.interior_design, main.services.architecture, main.services.consultation
+    - main.welcome, main.service_intro, main.contact_intro
+    -->
+    
     <!-- REVOLUTION JS FILES -->
 
     <script>
@@ -829,6 +880,9 @@
                 background     :   '#1a1a1a',
             });
         })(jQuery);
+        
+        // Language system is now handled automatically via data attributes
+        // No manual JavaScript needed for basic translations
     </script>  
 </body>
 </html>

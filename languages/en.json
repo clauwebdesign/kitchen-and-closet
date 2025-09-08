@@ -1,0 +1,76 @@
+{
+    "header": {
+        "home": "Home",
+        "about": "About Us",
+        "process": "Process",
+        "services": "Services",
+        "portfolio": "Portfolio",
+        "testimonial": "Testimonial",
+        "contact": "Contact"
+    },
+    "footer": {
+        "description": "We specialize in custom kitchen and closet construction, woodwork, and cabinetry solutions for your home.",
+        "contact": "Contact",
+        "social_media": "Social Media",
+        "address": "Address",
+        "copyright": "Copyright © 2025"
+    },
+    "main": {
+        "banner": {
+            "title": "Tailored Kitchens, Closets & Interiors",
+            "subtitle": "Transforming your home with innovative design, flawless craftsmanship, and woodwork built to last."
+        },
+        "button": {
+            "title": "Get Quote",
+            "learn_more": "Learn More",
+            "contact_us": "Contact Us",
+            "view_projects": "View Projects"
+        },
+        "about": {
+            "company": "About Company",
+            "title": "Expert Kitchen & Closet Builders",
+            "description": "Our philosophy is to create individual, aesthetically stunning kitchen and closet solutions for our customers through expert craftsmanship and custom woodwork. Even if you don't have a ready sketch of what you want – we will help you design and build the perfect storage solutions you dreamed of."
+        },
+        "process": {
+            "section_title": "working steps",
+            "title": "Our Building Process",
+            "step1": "Design Consultation",
+            "step2": "Material Selection",
+            "step3": "Custom Construction",
+            "step4": "Installation & Finish",
+            "description": "Our custom kitchen and closet projects are built with precision and attention to detail. We use only the finest materials and employ traditional woodworking techniques combined with modern design principles to create storage solutions that are both beautiful and highly functional."
+        },
+        "services": {
+            "title": "Our Services",
+            "design_planning": "Design and Planning",
+            "custom_solutions": "Custom Solutions",
+            "furniture_woodwork": "Furniture & Woodwork",
+            "kitchen_cabinets": "Kitchen Cabinets",
+            "closet_systems": "Closet Systems",
+            "custom_woodwork": "Custom Woodwork",
+            "renovation": "Renovation"
+        },
+        "portfolio": {
+            "section_title": "[ our portfolio ]",
+            "title": "Our Kitchen & Closet Projects",
+            "filter_all": "All",
+            "filter_kitchens": "Kitchens",
+            "filter_closets": "Closets",
+            "filter_cabinets": "Cabinets",
+            "filter_woodwork": "Woodwork",
+            "project1": "Modern Kitchen Renovation",
+            "project2": "Walk-in Closet System",
+            "project3": "Custom Kitchen Island",
+            "project4": "Built-in Storage Solutions",
+            "project5": "Luxury Master Closet",
+            "project6": "Contemporary Kitchen Design",
+            "project7": "Custom Pantry Organization",
+            "project8": "Executive Home Office"
+        },
+        "contact": {
+            "title": "Your Dream House",
+            "subtitle": "Original design project of high quality raises profit – this is proved in practice by many of our customers.",
+            "button_cta": "Get In Touch"
+        }
+    }
+}
