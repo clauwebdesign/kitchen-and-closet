@@ -1,14 +1,14 @@
 @charset "UTF-8";
 /*
-Theme Name: Theratio
-Theme URI: http://templates.thememodern.com/theratio/index.html
-Author: ThemeModern
-Author URI: http://thememodern.com
-Description: Theratio is a WordPress theme for Interior Design & Architecture Company. Theratio is easy to use, it provides everything you need to create great looking website. With Theratio you can impress your customer by it’s professional design and the interactivity. Theratio built with latest website technology to ensure your website is looks nice on desktop and mobile. Get Theratio now!
+Theme Name: T & Y Kitchen and Closet
+Theme URI: https://thekitchenandcloset.com/
+Author: T & Y Kitchen and Closet
+Author URI: https://thekitchenandcloset.com/
+Description: T & Y Kitchen and Closet is a professional website for custom kitchen and closet construction, woodwork, and cabinetry solutions. Specializing in innovative design and expert craftsmanship for Miami, FL area.
 Version: 1.0
 License: GNU General Public License v2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: theratio
+Text Domain: ty-kitchen-closet
 Domain Path: /languages/
 Tags: one-column, two-columns, left-sidebar, right-sidebar, full-width-template, post-formats, theme-options, threaded-comments, translation-ready
 
@@ -3732,37 +3732,37 @@ object {
   border-bottom-color: #fff;
 }
 
-.theratio-align-center .ot-heading.is-dots:before {
+.ty-align-center .ot-heading.is-dots:before {
   left: 50%;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
-.theratio-align-right .ot-heading.is-dots:before {
+.ty-align-right .ot-heading.is-dots:before {
   left: auto;
   right: 2px;
 }
 
-.theratio-align-left .ot-heading.is-dots:before {
+.ty-align-left .ot-heading.is-dots:before {
   left: 1px;
   right: auto;
 }
 
 @media (max-width: 1024px) {
-  .theratio-tablet-align-center .ot-heading.is-dots:before {
+  .ty-tablet-align-center .ot-heading.is-dots:before {
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
   }
 
-  .theratio-tablet-align-right .ot-heading.is-dots:before {
+  .ty-tablet-align-right .ot-heading.is-dots:before {
     left: auto;
     right: 2px;
   }
 
-  .theratio-tablet-align-left .ot-heading.is-dots:before {
+  .ty-tablet-align-left .ot-heading.is-dots:before {
     left: 1px;
     right: auto;
   }
@@ -3784,19 +3784,19 @@ object {
     width: 40px;
   }
 
-  .theratio-mobile-align-center .ot-heading.is-dots:before {
+  .ty-mobile-align-center .ot-heading.is-dots:before {
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
   }
 
-  .theratio-mobile-align-right .ot-heading.is-dots:before {
+  .ty-mobile-align-right .ot-heading.is-dots:before {
     left: auto;
     right: 2px;
   }
 
-  .theratio-mobile-align-left .ot-heading.is-dots:before {
+  .ty-mobile-align-left .ot-heading.is-dots:before {
     left: 1px;
     right: auto;
   }
@@ -7863,7 +7863,7 @@ section {
 .typo h1, .typo h2, .typo h3, .typo h4, .typo h5, .typo h6 {
     margin-bottom: 25px;
 }
-.theratio-separato {
+.ty-separato {
     height: 1px;
     width: 100%;
     background-color: rgba(0,0,0,.1);
@@ -8540,7 +8540,7 @@ ul.style-default li:last-child, ol.style-default li:last-child {
  .side-panel.side-panel-left.side-panel-open {
     transform: translateX(0);
 }
-.bg-dark-theratio {
+.bg-dark-ty {
     background-color: #0A0A0A;
 }
 /* Index 2 */
